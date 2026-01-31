@@ -137,7 +137,7 @@ Dockerがうまく動くようになっている場合、以下のコマンド�
 ```
 $ docker pull ghcr.io/vvakame/review:5.8 (ghcrからのダウンロードの場合)
 $ docker pull vvakame/review:5.8 (Docker Hubからのダウンロードの場合)
-$ ./build-in-docker.sh
+$ bash ./build-in-docker.sh
 ```
 
 ## 紙面や設定ファイルの切り替え
