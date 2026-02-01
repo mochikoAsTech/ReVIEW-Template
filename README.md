@@ -207,6 +207,17 @@ Docker環境でも以下のように指定できます。
 $ REVIEW_CONFIG_FILE=config-ebook.yml ./build-in-docker.sh
 ```
 
+Docker Composeを利用すると以下のように指定できます。
+
+```
+$ docker compose up
+```
+または
+
+```
+$ docker compose run -e REVIEW_CONFIG_FILE=config.yml --rm review npm run pdf
+```
+
 紙版と電子版では以下のような違いがあります。
 
  * 紙版：印刷用に、トンボ、デジタルトンボを設置。いくつかの同人誌印刷所で要求事項となっているノドへの隠しノンブル、大扉からのアラビア数字通し。ハイパーリンクは無効化。表紙（cover）は無視。
