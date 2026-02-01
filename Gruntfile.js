@@ -40,7 +40,7 @@ module.exports = grunt => {
 						cwd: articles,
 					}
 				},
-				command: `${reviewPreproc} -r --tabwidth=2 ${reviewContentDir}/*.re`
+				command: `${reviewContentDir === '_refiles' ? "echo 'skip preprocess'" : `${reviewPreproc} -r --tabwidth=2 ${reviewContentDir}/*.re`}`
 			},
 			compile2text: {
 				options: {
