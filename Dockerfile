@@ -1,4 +1,4 @@
-FROM vvakame/review:5.8
+FROM vvakame/review:5.9
 
 WORKDIR /book
 
